@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="446.0" prefWidth="564.0" spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.connection.ViewReports">
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="View Submitted Reports" />
+
+    <!-- Table to display reports -->
+    <TableView fx:id="reportTable">
+        <columns>
+            <TableColumn fx:id="classColumn" text="Class" />
+            <TableColumn fx:id="moduleColumn" prefWidth="111.99999237060547" text="Module" />
+            <TableColumn fx:id="challengesColumn" prefWidth="104.0" text="Challenges" />
+            <TableColumn fx:id="recommendationsColumn" prefWidth="139.199951171875" text="Recommendations" />
+            <TableColumn fx:id="dateSubmittedColumn" prefWidth="129.59994506835938" text="Date Submitted" />
+        </columns>
+    </TableView>
+</VBox>
